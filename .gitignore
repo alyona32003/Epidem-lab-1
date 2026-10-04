@@ -1,0 +1,42 @@
+# Py
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+#Винты
+.venv/
+venv/
+env/
+ENV/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDe
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# results
+results/
+*.csv
+*.gif
+*.png
+*.mp4
+
+# loc
+.env
+*.local
+
+# jup
+.ipynb_checkpoints/
