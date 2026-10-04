@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epidemic"
+version = "0.1.0"
+description = "Cellular automaton model of epidemic spreading on a 2D lattice"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "click",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+gif = ["pillow"]
+
+[project.scripts]
+epidemic = "epidemic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
